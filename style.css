@@ -25,3 +25,26 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+nueva-entrada {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+about-me {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+about-me a {
+    text-decoration: none;
+    color: #35424a;
+}
+
+about-me a:hover {
+    text-decoration: underline;
+}
