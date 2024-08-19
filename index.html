@@ -1,10 +1,11 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página Web</title>
-    <link rel="stylesheet" href="style.css"> <!-- Vincula el archivo CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
@@ -21,13 +22,30 @@
         <p>Agrego mas contenido a la entrada a ver que pasa</p>
     </section>
     <section id="about-me">
-    <h2><a href="about.html">Nueva Entrada</a></h2>
-    <p>Este es el contenido de la nueva entrada.</p>
+        <h2><a href="about.html">Nueva Entrada</a></h2>
+        <p>Este es el contenido de la nueva entrada.</p>
+    </section>
+    <section id="formulario-entrada">
+        <h2>Agregar Nueva Entrada</h2>
+        <form id="entrada-form">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required>
+            <label for="contenido">Contenido:</label>
+            <textarea id="contenido" name="contenido" required></textarea>
+            <button type="submit">Agregar Entrada</button>
+        </form>
+    </section>
+    <section id="entradas">
+        <h2>Entradas</h2>
+    </section>
+    <section id="actividad1">
+        <h2><a href="actividad1.html">Nueva Entrada</a></h2>
+        <p>Actividad 1 para sistemas operativos.</p>
     </section>
 </main>
 <footer>
     <p>© 2024 Mi Página Web</p>
 </footer>
-<script src="main.js"></script> <!-- Vincula el archivo JavaScript -->
+<script src="main.js"></script>
 </body>
 </html>

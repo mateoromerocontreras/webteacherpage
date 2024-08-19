@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+      <html lang="es">
+      <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Actividades de Línea de Comandos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Actividades de Línea de Comandos</h1>
+</header>
+<main>
+  <section id="actividad1">
+    <h2>Actividad 1: Navegar entre Directorios</h2>
+    <p><strong>Descripción:</strong> Los estudiantes aprenderán a moverse entre diferentes directorios utilizando la línea de comandos.</p>
+    <ul>
+      <li><strong>Abrir el Símbolo del sistema (cmd.exe):</strong>
+        <ul>
+          <li><strong>Instrucciones:</strong> Presionar Win + R, escribir cmd y presionar Enter.</li>
+        </ul>
+      </li>
+      <li><strong>Cambiar el directorio actual:</strong>
+        <ul>
+          <li><strong>Comando:</strong> <code>cd [nombre_del_directorio]</code></li>
+          <li><strong>Ejemplo:</strong> Navegar al escritorio con <code>cd Desktop</code>.</li>
+        </ul>
+      </li>
+      <li><strong>Tarea:</strong> Navegar desde el directorio raíz (C:) hasta el directorio Documentos.</li>
+      <li><strong>Volver al directorio anterior:</strong>
+        <ul>
+          <li><strong>Comando:</strong> <code>cd ..</code></li>
+        </ul>
+      </li>
+      <li><strong>Tarea:</strong> Navegar hacia atrás en la estructura de directorios hasta llegar al directorio raíz.</li>
+      <li><strong>Mostrar la ruta completa del directorio actual:</strong>
+        <ul>
+          <li><strong>Comando:</strong> <code>cd</code></li>
+        </ul>
+      </li>
+      <li><strong>Tarea:</strong> Mostrar la ruta del directorio actual y escribirla en un archivo de texto.</li>
+    </ul>
+  </section>
+
+  <section id="actividad2">
+    <h2>Actividad 2: Crear Archivos y Directorios</h2>
+    <p><strong>Descripción:</strong> Los estudiantes practicarán la creación de archivos y directorios, así como su organización.</p>
+    <ul>
+      <li><strong>Crear un nuevo directorio:</strong>
+        <ul>
+          <li><strong>Comando:</strong> <code>mkdir [nombre_del_directorio]</code></li>
+          <li><strong>Ejemplo:</strong> <code>mkdir Ejercicio</code></li>
+        </ul>
+      </li>
+      <li><strong>Tarea:</strong> Crear un directorio llamado Proyectos en el escritorio.</li>
+      <li><strong>Crear un nuevo archivo de texto:</strong>
+        <ul>
+          <li><strong>Comando:</strong> <code>echo [texto] > [nombre_del_archivo.txt]</code></li>
+          <li><strong>Ejemplo:</strong> <code>echo Hola Mundo > hola.txt</code></li>
+        </ul>
+      </li>
+      <li><strong>Tarea:</strong> Crear un archivo llamado lista.txt dentro del directorio Proyectos con el texto "Tareas pendientes".</li>
+      <li><strong>Crear un archivo vacío:</strong>
+        <ul>
+          <li><strong>Comando:</strong> <code>type nul > [nombre_del_archivo.txt]</code></li>
+          <li><strong>Ejemplo:</strong> <code>type nul > nuevo.txt</code></li>
+        </ul>
+      </li>
+      <li><strong>Tarea:</strong> Crear un archivo vacío llamado notas.txt en el directorio Proyectos.</li>
+    </ul>
+  </section>
+
+  <section id="actividad3">
+    <h2>Actividad 3: Listar el Contenido de Directorios</h2>
+    <p><strong>Descripción:</strong> Los estudiantes aprenderán a visualizar y organizar el contenido de los directorios.</p>
+    <ul>
+      <li><strong>Listar los archivos y carpetas en el directorio actual:</strong>
+        <ul>
+          <li><strong>Comando:</strong> <code>dir</code></li>
+        </ul>
+      </li>
+      <li><strong>Tarea:</strong> Listar el contenido del directorio Proyectos que crearon previamente.</li>
+      <li><strong>Listar archivos y directorios con detalles adicionales:</strong>
+        <ul>
+          <li><strong>Comando:</strong> <code>dir /w</code> (lista en formato ancho) o <code>dir /p</code> (lista página por página)</li>
+        </ul>
+      </li>
+      <li><strong>Tarea:</strong> Listar el contenido de <code>C:\Windows</code> y anotar cuántos archivos y carpetas hay.</li>
+      <li><strong>Listar solo archivos de un tipo específico (por ejemplo, archivos .txt):</strong>
+        <ul>
+          <li><strong>Comando:</strong> <code>dir *.txt</code></li>
+        </ul>
+      </li>
+      <li><strong>Tarea:</strong> Listar solo los archivos .txt en el directorio Proyectos.</li>
+    </ul>
+  </section>
+
+  <section id="actividad4">
+    <h2>Actividad 4: Mover y Copiar Archivos</h2>
+    <p><strong>Descripción:</strong> Los estudiantes practicarán mover y copiar archivos de un directorio a otro utilizando la línea de comandos.</p>
+    <ul>
+      <li><strong>Copiar un archivo:</strong>
+        <ul>
+          <li><strong>Comando:</strong> <code>copy [ruta_origen] [ruta_destino]</code></li>
+          <li><strong>Ejemplo:</strong> <code>copy hola.txt C:\Users\[usuario]\Desktop\Proyectos</code></li>
+        </ul>
+      </li>
+      <li><strong>Tarea:</strong> Copiar <code>hola.txt</code> desde <code>C:\</code> al directorio Proyectos.</li>
+      <li><strong>Mover un archivo:</strong>
+        <ul>
+          <li><strong>Comando:</strong> <code>move [ruta_origen] [ruta_destino]</code></li>
+          <li><strong>Ejemplo:</strong> <code>move hola.txt C:\Users\[usuario]\Desktop\Proyectos</code></li>
+        </ul>
+      </li>
+      <li><strong>Tarea:</strong> Mover <code>notas.txt</code> del directorio Proyectos al escritorio.</li>
+    </ul>
+  </section>
+
+  <section id="actividad5">
+    <h2>Actividad 5: Ejecutar Scripts Básicos</h2>
+    <p><strong>Descripción:</strong> Los estudiantes aprenderán a crear y ejecutar scripts básicos en la línea de comandos para automatizar tareas sencillas.</p>
+    <ul>
+      <li><strong>Crear un script batch:</strong>
+        <ul>
+          <li><strong>Comando:</strong> Usar <code>echo</code> para escribir comandos en un archivo .bat</li>
+          <li><strong>Ejemplo:</strong> <code>echo echo "Hola, mundo!" > script.bat</code></li>
+        </ul>
+      </li>
+      <li><strong>Tarea:</strong> Crear un script <code>organizar.bat</code> que mueva todos los archivos .txt del escritorio al directorio Proyectos.</li>
+      <li><strong>Ejecutar el script:</strong>
+        <ul>
+          <li><strong>Comando:</strong> <code>nombre_del_script.bat</code></li>
+          <li><strong>Ejemplo:</strong> <code>script.bat</code></li>
+        </ul>
+      </li>
+      <li><strong>Tarea:</strong> Ejecutar el script <code>organizar.bat</code> y verificar que los archivos .txt fueron movidos.</li>
+    </ul>
+  </section>
+
+  <section id="actividad6">
+    <h2>Actividad 6: Borrar Archivos y Directorios</h2>
+    <p><strong>Descripción:</strong> Los estudiantes aprenderán a eliminar archivos y directorios de manera segura.</p>
+    <ul>
+      <li><strong>Eliminar un archivo:</strong>
+        <ul>
+          <li><strong>Comando:</strong> <code>del [nombre_del_archivo]</code></li>
+          <li><strong>Ejemplo:</strong> <code>del hola.txt</code></li>
+        </ul>
+      </li>
+      <li><strong>Tarea:</strong> Eliminar <code>notas.txt</code> del escritorio.</li>
+      <li><strong>Eliminar un directorio vacío:</strong>
+        <ul>
+          <li><strong>Comando:</strong> <code>rmdir [nombre_del_directorio]</code></li>
+          <li><strong>Ejemplo:</strong> <code>rmdir Ejercicio</code></li>
+        </ul>
+      </li>
+      <li><strong>Tarea:</strong> Eliminar el directorio vacío Proyectos.</li>
+      <li><strong>Eliminar un directorio con contenido:</strong>
+        <ul>
+          <li><strong>Comando:</strong> <code>rmdir /s [nombre_del_directorio]</code></li>
+        </ul>
+      </li>
+      <li><strong>Tarea:</strong> Crear un directorio llamado <code>Temp</code> con algunos archivos dentro, y luego eliminarlo junto con su contenido.</li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <p>© 2024 Actividades de Línea de Comandos</p>
+</footer>
+</body>
+</html>

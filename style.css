@@ -1,3 +1,4 @@
+/* style.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -33,18 +34,37 @@ nueva-entrada {
     margin-top: 20px;
 }
 
-about-me {
-    padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
+formulario-entrada {
     margin-top: 20px;
 }
 
-about-me a {
-    text-decoration: none;
-    color: #35424a;
+formulario-entrada form {
+    display: flex;
+    flex-direction: column;
 }
 
-about-me a:hover {
-    text-decoration: underline;
+formulario-entrada label {
+    margin-top: 10px;
+}
+
+formulario-entrada input,
+formulario-entrada textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+formulario-entrada button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #35424a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+formulario-entrada button:hover {
+    background-color: #2c3e50;
 }
